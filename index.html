@@ -19,7 +19,22 @@
 
 <div class="content active">
      <div class="card horizontal">
-        <img src="https://cdn.kyou.id/items/469035-limbus-company-plushie-don-quixote-17cm.jpg.webp" alt="Profile" class="profile-img">
+       <img id="soundButton"
+     src="https://cdn.kyou.id/items/469035-limbus-company-plushie-don-quixote-17cm.jpg.webp"
+     alt="Profile"
+     class="profile-img"
+     style="cursor:pointer; width:200px;">
+
+<audio id="soundEffect" src="manager-esquire.mp3"></audio>
+
+<script>
+  document.getElementById("soundButton").addEventListener("click", function () {
+    const audio = document.getElementById("soundEffect");
+    audio.currentTime = 0; // restart sound each click
+    audio.play();
+  });
+</script>
+
         <div class="text-block">
             <h2>About Me</h2>
             <p>My name is Don Quixote, with "Don" signifying nobility.</p>
@@ -37,10 +52,20 @@
     <h1 class="section-title">Notable Past Work Experience</h1>
 
     <div class="card horizontal">
+        <img src="https://smatheresiana1.sch.id/smathere/wp-content/uploads/2025/07/24132023_1229465257154162_6232500862772732835_o.jpg" class="exp-img">
+        <div class="text-block">
+            <h2>관리자 University</h2>
+            <p><strong>Duration:</strong> 5 Years</p>
+            <p><strong>Degree:</strong> Bachelors and Masters in Fixer Studies</p>
+            <p><strong>Achievements:</strong> Valedictorian, Bachelors and Masters.</p>
+        </div>
+    </div>
+
+    <div class="card horizontal">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3S_w8xUZq_9pVnwMQ6vTWT5JDYhcAJEya1A&s" class="exp-img">
         <div class="text-block">
             <h2>La Manchaland</h2>
-            <p><strong>Duration:</strong> 100 Years</p>
+            <p><strong>Duration:</strong> 1000 Years</p>
             <p><strong>Role:</strong> Co-Founder, Manager</p>
             <p><strong>Achievements:</strong> Overthrowing tyrannical upper management</p>
         </div>
@@ -96,7 +121,7 @@
         <div class="skill-card">
             <img src="https://limbuscompany.wiki.gg/images/thumb/The_Manager_of_La_Manchaland_Don_Quixote_Full.png/498px-The_Manager_of_La_Manchaland_Don_Quixote_Full.png" class="skill-img">
             <h3>Professional Vampire</h3>
-            <p>100 Years Experience</p>
+            <p>100000 Years Experience</p>
         </div>
     </div>
 
