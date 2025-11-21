@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>My Portfolio</h1>
+</div>
+
+<div class="tabs">
+    <div class="tab active" onclick="openTab(0)">About Me</div>
+    <div class="tab" onclick="openTab(1)">Experience</div>
+    <div class="tab" onclick="openTab(2)">Expertise</div>
+</div>
+
+<div class="content active">
+     <div class="card horizontal">
+        <img src="https://cdn.kyou.id/items/469035-limbus-company-plushie-don-quixote-17cm.jpg.webp" alt="Profile" class="profile-img">
+        <div class="text-block">
+            <h2>About Me</h2>
+            <p>My name is Don Quixote, with "Don" signifying nobility.</p>
+            <p>Aspiring Professional in The City, Graduate from 관리자 University with a Masters in Fixer Studies.</p>
+            <p>Notable achievements include the felling of 'La Manchaland', as well as contributing to the Manhattan Project.</p>
+
+            <h2 style="margin-top:20px;">Contact Me</h2>
+            <p>Email : woomywompwomp@yahoo.com</p>
+            <p>Phone : +679919293020</p>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <h1 class="section-title">Notable Past Work Experience</h1>
+
+    <div class="card horizontal">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3S_w8xUZq_9pVnwMQ6vTWT5JDYhcAJEya1A&s" class="exp-img">
+        <div class="text-block">
+            <h2>La Manchaland</h2>
+            <p><strong>Duration:</strong> 100 Years</p>
+            <p><strong>Role:</strong> Co-Founder, Manager</p>
+            <p><strong>Achievements:</strong> Overthrowing tyrannical upper management</p>
+        </div>
+    </div>
+
+    <div class="card horizontal">
+        <img src="https://limbuscompany.wiki.gg/images/Limbus_Company_Logo.png?9d81e0" class="exp-img">
+        <div class="text-block">
+            <h2>LCC Inc.</h2>
+            <p><strong>Duration:</strong> 9 Years</p>
+            <p><strong>Role:</strong> Sinner</p>
+            <p><strong>Achievements:</strong> Overthrowing tyrannical upper management</p>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <h1 class="section-title">My Skills</h1>
+
+    <div class="grid">
+        <div class="skill-card">
+            <img src="https://limbuscompany.wiki.gg/images/thumb/Cinq_Assoc._South_Section_5_Director_Don_Quixote_Full_Uptied.png/498px-Cinq_Assoc._South_Section_5_Director_Don_Quixote_Full_Uptied.png" class="skill-img">
+            <h3>Fencing</h3>
+            <p>15 Years Experience</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://limbuscompany.wiki.gg/images/thumb/T_Corp._Class_3_Collection_Staff_Don_Quixote_Full.png/498px-T_Corp._Class_3_Collection_Staff_Don_Quixote_Full.png" class="skill-img">
+            <h3>Collection</h3>
+            <p>8 Years Experience</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://limbuscompany.wiki.gg/images/Heishou_Pack_-_Wei_Branch_Don_Quixote_Full.png" class="skill-img">
+            <h3>Become Goat</h3>
+            <p>1 Year Experience</p>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="skill-card">
+            <img src="https://limbuscompany.wiki.gg/images/thumb/Blade_Lineage_Salsu_Don_Quixote_Full_Uptied.png/498px-Blade_Lineage_Salsu_Don_Quixote_Full_Uptied.png" class="skill-img">
+            <h3>Swordplay</h3>
+            <p>6 Years Experience</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://limbuscompany.wiki.gg/images/thumb/Lobotomy_E.G.O_In_the_Name_of_Love_and_Hate_Don_Quixote_Full.png/498px-Lobotomy_E.G.O_In_the_Name_of_Love_and_Hate_Don_Quixote_Full.png" class="skill-img">
+            <h3>Storytelling</h3>
+            <p>3 Years Experience</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://limbuscompany.wiki.gg/images/thumb/The_Manager_of_La_Manchaland_Don_Quixote_Full.png/498px-The_Manager_of_La_Manchaland_Don_Quixote_Full.png" class="skill-img">
+            <h3>Professional Vampire</h3>
+            <p>100 Years Experience</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function openTab(index) {
+    const tabs = document.querySelectorAll(".tab");
+    const contents = document.querySelectorAll(".content");
+
+    tabs.forEach((tab, i) => {
+        tab.classList.toggle("active", i === index);
+        contents[i].classList.toggle("active", i === index);
+    });
+}
+</script>
+
+</body>
+</html>
